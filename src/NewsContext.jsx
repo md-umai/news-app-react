@@ -14,11 +14,11 @@ const ContextProvider = ({ children }) => {
     const [loading, setLoading] = useState(false);
 
 
-    const fetchNews = async (url='search?q=apple') => {
+    const fetchNews = async (url='search?q=general') => {
         setLoading(true);
         try {
             // console.log(import.meta.env.VITE_API_KEY)
-            const respo = await api.get(`/${url}&apiKey=${import.meta.env.VITE_API_KEY}`);
+            const respo = await api.get(`${url}&apikey=${import.meta.env.VITE_API_KEY}&lang=en`);
             setLoading(false);
             return respo.data;
         } 
