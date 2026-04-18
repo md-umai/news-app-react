@@ -10,7 +10,7 @@ const Category = () => {
 
     const handleClick = async (e) => {
         const cat = e.target.value;
-        const data = await fetchNews(`everything?q=${cat}`)
+        const data = await fetchNews(`search?q=${cat}`)
         console.log(data);
         setNews(data.articles);
     }
