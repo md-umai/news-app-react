@@ -12,7 +12,7 @@ function Navbar() {
         clearTimeout(timer);
 
         timer = setTimeout(async () => {
-            const data = await fetchNews(`everything?q=${search}`)
+            const data = await fetchNews(`search?q=${search}`)
             if (data && data?.articles) {
                 setNews(data.articles);
                 // console.log(data.articles);
