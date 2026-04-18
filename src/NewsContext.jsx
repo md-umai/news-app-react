@@ -14,7 +14,7 @@ const ContextProvider = ({ children }) => {
     const [loading, setLoading] = useState(false);
 
 
-    const fetchNews = async (url='everything?q=apple') => {
+    const fetchNews = async (url='search?q=apple') => {
         setLoading(true);
         try {
             // console.log(import.meta.env.VITE_API_KEY)
