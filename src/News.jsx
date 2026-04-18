@@ -57,7 +57,7 @@ const Card = ({ details }) => {
       <figure className="w-full">
         <img
           className="w-full h-40 sm:h-48 md:h-52 lg:h-56 object-cover"
-          src={details?.urlToImage}
+          src={details?.image}
           alt="news"
         />
       </figure>
